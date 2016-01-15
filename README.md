@@ -8,14 +8,16 @@ Generates generic, single-letter icons styled according to the [Material Design]
 * [svg2png](https://www.npmjs.com/package/svg2png) - to convert the generated `.svg` icons to `.png` using PhantomJS
 
 Demo
---
+---
 <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/A.png" width="125" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/H.png" width="125" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/L.png" width="125" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/M.png" width="125" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/R.png" width="125" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/X.png" width="125" />
 
 Usage
 ---
 
-Either copy the generated icons from `dist/` in `.png` or `.svg` format, or install the package and generate the icons yourself:
+The icons are pre-generated in `.png` and `.svg` format within the `dist/` directory.
 
+
+If you want to generate them manually, install the package using npm:
 ```shell
 $ npm install material-letter-icons
 ```
@@ -37,3 +39,13 @@ materialLetterIcons.generateIcons(function(err) {
     console.log('Icons generated successfully!');
 });
 ```
+
+Requirements
+---
+If you're generating the icons yourself, make sure to:
+
+* Install the `dependencies/Roboto-Light.ttf` font as a system-wide font, and make sure that `Light` is the only `Roboto` font weight you have installed. Unfortunately, I couldn't bundle it within the `base.svg` due to [a bug with PhantomJS](https://github.com/domenic/svg2png/issues/39).
+
+License
+---
+Apache 2.0
