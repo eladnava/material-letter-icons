@@ -1,5 +1,6 @@
 material-letter-icons
 ===================
+[![npm version](https://badge.fury.io/js/material-letter-icons.svg)](https://badge.fury.io/js/material-letter-icons)
 
 Generates generic, single-letter icons styled according to the [Material Design](https://www.google.com/design/spec/material-design/introduction.html) colors and guidelines, similar to Gmail's fallback sender icons, using:
 
