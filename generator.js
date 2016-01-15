@@ -14,7 +14,7 @@ colorKeys.sort(function() {
 });
 
 // Load base icon SVG file as UTF-8 string
-var baseSVG = fs.readFileSync(config.src.svg.basePath, {encoding: 'utf8'});
+var baseSVG = fs.readFileSync(__dirname + '/' + config.src.svg.basePath, {encoding: 'utf8'});
 
 // Main generator function
 exports.generateIcons = function(cb) {
@@ -55,8 +55,8 @@ exports.generateLetterIcon = function(letter, cb) {
     letterSVG = letterSVG.replace('{x}', letter);
     
     // Define SVG/PNG output path
-    var outputSVGPath = config.dist.svg.outputPath + letter + '.svg';
-    var outputPNGPath = config.dist.png.outputPath + letter + '.png';
+    var outputSVGPath = __dirname + '/' + config.dist.svg.outputPath + letter + '.svg';
+    var outputPNGPath = __dirname + '/' + config.dist.png.outputPath + letter + '.png';
     
     // Export the letter as an SVG file
     fs.writeFileSync(outputSVGPath, letterSVG);
