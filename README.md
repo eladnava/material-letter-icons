@@ -8,7 +8,7 @@ Generates generic, single-letter icons styled according to the [Material Design]
 
 Demo
 --
-<img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/X.png" width="150" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/Y.png" width="150" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/Z.png" width="150" />
+<img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/A.png" width="125" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/H.png" width="125" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/L.png" width="125" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/M.png" width="125" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/R.png" width="125" /> <img src="https://raw.github.com/eladnava/material-letter-icons/master/dist/png/X.png" width="125" />
 
 Usage
 ---
