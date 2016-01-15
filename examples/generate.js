@@ -1,5 +1,5 @@
 // Load our letter icon generator
-var materialLetterIcons = require('../generator') || require('material-letter-icons');
+var materialLetterIcons = require('../generator');
 
 // Generate the letter icons and export them to dist/
 materialLetterIcons.generateIcons(function(err) {
