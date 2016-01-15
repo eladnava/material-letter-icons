@@ -36,7 +36,12 @@ exports.generateIcons = function(cb) {
             // Continue to next letter
             return cbAsync();
         });
-    }, function done() {
+    }, function done(err) {  
+        // Handle errors
+        if (err) {
+            return cb(err);
+        }
+        
         // Call parent callback
         cb();
     });
