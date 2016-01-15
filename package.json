@@ -1,0 +1,31 @@
+{
+  "name": "material-letter-icons",
+  "version": "1.0.0",
+  "description": "Generates generic, single-letter icons styled according to the Material Design colors and guidelines, similar to Gmail's fallback sender icons.",
+  "main": "generator.js",
+  "scripts": {
+    "start": "node examples/generate.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eladnava/material-letter-icons.git"
+  },
+  "keywords": [
+    "material",
+    "letter",
+    "icons",
+    "generator"
+  ],
+  "author": "Elad Nava <eladnava@gmail.com> (http://eladnava.com)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/eladnava/material-letter-icons/issues"
+  },
+  "homepage": "https://github.com/eladnava/material-letter-icons#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "material-colors": "^1.0.0",
+    "svg2png": "^2.1.0"
+  }
+}
