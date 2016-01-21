@@ -59,9 +59,12 @@ exports.generateLetterIcon = function(letter, cb) {
     letterSVG = letterSVG.replace('{c}', color);
     letterSVG = letterSVG.replace('{x}', letter);
     
+    // Get filesystem-friendly file name for letter
+    var fileName = this.getIconFilename(letter);
+    
     // Define SVG/PNG output path
-    var outputSVGPath = __dirname + '/' + config.dist.svg.outputPath + letter + '.svg';
-    var outputPNGPath = __dirname + '/' + config.dist.png.outputPath + letter + '.png';
+    var outputSVGPath = __dirname + '/' + config.dist.svg.outputPath + fileName + '.svg';
+    var outputPNGPath = __dirname + '/' + config.dist.png.outputPath + fileName + '.png';
     
     // Export the letter as an SVG file
     fs.writeFileSync(outputSVGPath, letterSVG);
@@ -76,6 +79,18 @@ exports.generateLetterIcon = function(letter, cb) {
         // Success!
         cb();
     });
+}
+
+// Returns a filesystem-friendly filename (without extension)
+this.getIconFilename = function(letter) {
+    // Not alphanumeric?
+    if (!letter.match(/^[0-9a-zA-Z]$/)) {
+        // Return charcode instead
+        return 'ASCII-' + letter.charCodeAt(0);
+    }
+    
+    // We're good
+    return letter;
 }
 
 // Returns the next Material Design color for the icon background
