@@ -24,9 +24,9 @@ $ material-letter-icons generate --chars $#@
 
 ### Troubleshooting
 
-#### EACCES - Permission Denied
+###### EACCES - Permission Denied
 
-You don't have write access to your global `node_modules` folder. Work around this error by prefixing the commands with `sudo`, or check out [fixing npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to `chown` those directories. 
+You probably don't have write access to your global `node_modules` folder. Work around this error by prefixing the commands with `sudo`, or check out [fixing npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to `chown` those directories. 
 
 ## Command Line Options
 ```shell
