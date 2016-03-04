@@ -1,8 +1,8 @@
 // Package configuration
 module.exports = {
     generator: {
-        // Characters to generate, as string
-        characters: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        // Alphabet characters to generate, as string
+        alphabet: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     },
     src: {
         svg: {
@@ -11,13 +11,15 @@ module.exports = {
         }
     },
     dist: {
+        // Distribution output directory
+        path: 'dist/',
         svg: {
             // SVG icon output directory
-            outputPath: 'dist/svg/',
+            outputPath: 'svg/',
         },
         png: {
             // PNG icon output directory
-            outputPath: 'dist/png/',
+            outputPath: 'png/',
             
             // PNG icon output dimensions
             dimensions: {

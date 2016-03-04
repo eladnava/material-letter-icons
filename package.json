@@ -17,6 +17,9 @@
     "icons",
     "generator"
   ],
+  "bin": {
+    "material-letter-icons": "./index.js"
+  },
   "author": "Elad Nava <eladnava@gmail.com> (http://eladnava.com)",
   "license": "Apache-2.0",
   "bugs": {
@@ -25,7 +28,9 @@
   "homepage": "https://github.com/eladnava/material-letter-icons#readme",
   "dependencies": {
     "async": "^1.5.2",
+    "commander": "^2.9.0",
     "material-colors": "^1.0.0",
+    "npmlog": "^2.0.2",
     "svg2png": "^2.1.0"
   }
 }
