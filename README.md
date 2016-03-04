@@ -4,8 +4,9 @@ material-letter-icons
 
 Generates generic, single-letter icons styled according to the [Material Design](https://www.google.com/design/spec/material-design/introduction.html) colors and guidelines, similar to Gmail's fallback sender icons, using:
 
-* [material-colors](https://www.npmjs.com/package/material-colors) - to provide a Material-colored background for the icons
-* [svg2png](https://www.npmjs.com/package/svg2png) - to convert the generated `.svg` icons to `.png` using PhantomJS
+* [Roboto Light](https://www.google.com/fonts/specimen/Roboto) - to display the letters using the official Material Design typeface
+* [material-colors](https://www.npmjs.com/package/material-colors) - to provide a Material Design colored background for the icons
+* [svg2png](https://www.npmjs.com/package/svg2png) - to convert the generated `.svg` icon files to `.png` format using PhantomJS
 
 Demo
 ---
