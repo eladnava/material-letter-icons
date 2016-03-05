@@ -22,7 +22,7 @@ $ npm install -g material-letter-icons
 $ material-letter-icons generate --chars $#@
 ```
 
-### Troubleshooting
+## Troubleshooting
 
 ###### EACCES - Permission Denied
 
