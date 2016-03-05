@@ -1,6 +1,6 @@
 {
   "name": "material-letter-icons",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Generates generic, single-letter icons styled according to the Material Design colors and guidelines, similar to Gmail's fallback sender icons.",
   "main": "generator.js",
   "scripts": {
