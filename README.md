@@ -17,16 +17,14 @@ The icons are **pre-generated** in `.png` and `.svg` format within the `dist/` d
 
 ## Generate Custom Icons
 
+* Install the `dependencies/Roboto-Light.ttf` font as a system-wide font, and make sure that `Light` is the only `Roboto` font weight you have installed. Unfortunately, it can't be bundled within the `base.svg` due to [a bug with PhantomJS](https://github.com/domenic/svg2png/issues/39).
+
+* Run the following commands to generate icons for custom characters:
+
 ```shell
 $ npm install -g material-letter-icons
 $ material-letter-icons generate --chars $#@
 ```
-
-## Troubleshooting
-
-###### EACCES - Permission Denied
-
-You probably don't have write access to your global `node_modules` folder. Work around this error by prefixing the commands with `sudo`, or check out [fixing npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to `chown` those directories. 
 
 ## Command Line Options
 ```shell
@@ -41,10 +39,11 @@ $ material-letter-icons --help
     -c, --chars <$#@>  generate icons for custom characters (no seperator)
 ```
 
-## Requirements
-If you're generating the icons yourself, make sure to:
+## Troubleshooting
 
-* Install the `dependencies/Roboto-Light.ttf` font as a system-wide font, and make sure that `Light` is the only `Roboto` font weight you have installed. Unfortunately, it can't be bundled within the `base.svg` due to [a bug with PhantomJS](https://github.com/domenic/svg2png/issues/39).
+###### EACCES - Permission Denied
+
+You probably don't have write access to your global `node_modules` folder. Work around this error by prefixing the commands with `sudo`, or check out [fixing npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions) to `chown` those directories. 
 
 ## License
 Apache 2.0
