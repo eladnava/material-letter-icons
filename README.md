@@ -22,13 +22,13 @@ The icons are **pre-generated** in `.png` and `.svg` format within the `dist/` d
 * Run the following commands to generate icons for custom characters:
 
 ```shell
-$ npm install -g material-letter-icons
-$ material-letter-icons generate --chars $#@
+npm install -g material-letter-icons
+material-letter-icons generate --chars '$#@'
 ```
 
 ## Command Line Options
 ```shell
-$ material-letter-icons --help
+material-letter-icons --help
 
   Usage: material-letter-icons [options]
 
