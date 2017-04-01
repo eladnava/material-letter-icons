@@ -31,6 +31,6 @@
     "commander": "^2.9.0",
     "material-colors": "^1.0.0",
     "npmlog": "^2.0.2",
-    "svg2png": "^2.1.0"
+    "svg2png": "3.0.1"
   }
 }
